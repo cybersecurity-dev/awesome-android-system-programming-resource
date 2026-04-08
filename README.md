@@ -2,3 +2,4 @@
 
 ## Books
 - [Android System Programming: Porting, customizing, and debugging Android HAL](https://www.amazon.com/Android-System-Programming-customizing-debugging-ebook/dp/B072M68RN9)
+- [Inside the Android OS: Building, Customizing, Managing and Operating Android System Services (Android Deep Dive)](https://www.amazon.com/Inside-Android-OS-Customizing-Operating-ebook/dp/B08F5J141P)
