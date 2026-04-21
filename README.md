@@ -1,4 +1,12 @@
+<div align="center">
+    <p align="center">
+        <a href="https://github.com/cybersecurity-dev/awesome-android-system-programming">
+          <img width="35%" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/Android.svg" />
+        </a>
+    </p>
+
 # **`Awesome`** Android System Programming Resource
+</div>
 
 ## Books
 - [Android System Programming: Porting, customizing, and debugging Android HAL](https://www.amazon.com/Android-System-Programming-customizing-debugging-ebook/dp/B072M68RN9)
