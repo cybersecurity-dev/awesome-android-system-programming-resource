@@ -5,7 +5,7 @@
         </a>
     </p>
 
-# **`Awesome`** Android System Programming Resource
+# **`Awesome`** Android System Programming Resource [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 </div>
 
 ## Books
