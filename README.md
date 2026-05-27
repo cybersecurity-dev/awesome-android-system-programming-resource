@@ -23,15 +23,18 @@
 
 ## 📖 Contents
 - [Books](#books)
+- [Videos](#videos)
 - [My Other Awesome Lists](#my-other-awesome-lists)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
 
 ## Books
+- [Androids: The Team that Built the Android Operating System](https://www.amazon.com/Androids-Built-Android-Operating-System-ebook/dp/B09QPMNWS5)
 - [Android System Programming: Porting, customizing, and debugging Android HAL](https://www.amazon.com/Android-System-Programming-customizing-debugging-ebook/dp/B072M68RN9)
 - [Inside the Android OS: Building, Customizing, Managing and Operating Android System Services (Android Deep Dive)](https://www.amazon.com/Inside-Android-OS-Customizing-Operating-ebook/dp/B08F5J141P)
 - [Android Security Internals: An In-Depth Guide to Android's Security Architecture](https://www.amazon.com/Android-Security-Internals-Depth-Architecture/dp/1593275811)
-- [Androids: The Team that Built the Android Operating System](https://www.amazon.com/Androids-Built-Android-Operating-System-ebook/dp/B09QPMNWS5)
+
+## Videos
 
 ##
 
@@ -43,5 +46,8 @@ You can access the my other awesome lists [here](https://cyberthreatdefence.com/
 
 ### Contributors
 [Thanks goes to these contributors](https://github.com/cybersecurity-dev/awesome-android-system-programming-resource/graphs/contributors)!
+
+### License
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
 [🔼 Back to top](#awesome-android-system-programming-resource-)
