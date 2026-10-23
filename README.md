@@ -7,33 +7,33 @@
 
 ```mermaid
 flowchart LR
-    A(["Select system topic"])
-    B["Study Android architecture"]
-    C["Define component interfaces"]
-    D{"Implementation level?"}
+    A(["Select<br/>system<br/>topic"])
+    B["Study<br/>Android<br/>architecture"]
+    C["Define<br/>component<br/>interfaces"]
+    D{"Implementation<br/>level?"}
 
-    E["Application Framework<br/>Kotlin or Java"]
-    F["Native Layer<br/>C or C++ with NDK"]
-    G["System Layer<br/>AIDL, HAL or native service"]
+    E["Application<br/>Framework<br/>Kotlin or Java"]
+    F["Native Layer<br/>C or C++ with<br/>NDK"]
+    G["System Layer<br/>AIDL, HAL or<br/>native service"]
 
-    H["Build with Gradle or CMake"]
-    I["Deploy using ADB"]
-    J["Execute test cases"]
+    H["Build with<br/>Gradle or CMake"]
+    I["Deploy using<br/>ADB"]
+    J["Execute test<br/>cases"]
 
     K{"Expected behavior?"}
-    L["Collect logs and traces"]
+    L["Collect logs<br/>and<br/>traces"]
     M["Analyze process, IPC,<br/>memory, CPU and I/O"]
-    N["Fix implementation"]
-    O["Security validation"]
-    P["Performance evaluation"]
-    Q["Document architecture<br/>and experimental results"]
-    R(["Complete laboratory"])
+    N["Fix<br/>implementation"]
+    O["Security<br/>validation"]
+    P["Performance<br/>evaluation"]
+    Q["Document<br/>architecture<br/>and experimental results"]
+    R(["Complete<br/>laboratory"])
 
     A --> B --> C --> D
 
     D -->|"High level"| E
-    D -->|"Native library"| F
-    D -->|"Platform integration"| G
+    D -->|"Native<br/>library"| F
+    D -->|"Platform<br/>integration"| G
 
     E --> H
     F --> H
@@ -74,7 +74,7 @@ flowchart LR
 <p align="center">
     <a href="https://github.com/cybersecurity-dev/"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/github.svg" alt="GitHub"></a>
     &nbsp;
-    <a href="https://www.youtube.com/@CyberThreatDefence"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/youtube.svg" alt="YouTube"></a>
+    <a href="https://www.youtube.com/@CyberThreatDefense"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/youtube.svg" alt="YouTube"></a>
     &nbsp;
     <a href="https://cyberthreatdefence.com/my_awesome_lists"><img height="20" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/blog.svg" alt="My Awesome Lists"></a>
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
@@ -182,13 +182,16 @@ flowchart TB
 - [Contributing](#contributing)
 - [Contributors](#contributors)
 
-## Books
+##
+
+### Books
 - [Androids: The Team that Built the Android Operating System](https://www.amazon.com/Androids-Built-Android-Operating-System-ebook/dp/B09QPMNWS5)
 - [Android System Programming: Porting, customizing, and debugging Android HAL](https://www.amazon.com/Android-System-Programming-customizing-debugging-ebook/dp/B072M68RN9)
 - [Inside the Android OS: Building, Customizing, Managing and Operating Android System Services (Android Deep Dive)](https://www.amazon.com/Inside-Android-OS-Customizing-Operating-ebook/dp/B08F5J141P)
 - [Android Security Internals: An In-Depth Guide to Android's Security Architecture](https://www.amazon.com/Android-Security-Internals-Depth-Architecture/dp/1593275811)
 
-## Videos
+### Videos
+
 
 ##
 
