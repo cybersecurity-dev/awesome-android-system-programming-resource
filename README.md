@@ -5,12 +5,71 @@
         </a>
     </p>
 
+```mermaid
+flowchart LR
+    A(["Select system topic"])
+    B["Study Android architecture"]
+    C["Define component interfaces"]
+    D{"Implementation level?"}
+
+    E["Application Framework<br/>Kotlin or Java"]
+    F["Native Layer<br/>C or C++ with NDK"]
+    G["System Layer<br/>AIDL, HAL or native service"]
+
+    H["Build with Gradle or CMake"]
+    I["Deploy using ADB"]
+    J["Execute test cases"]
+
+    K{"Expected behavior?"}
+    L["Collect logs and traces"]
+    M["Analyze process, IPC,<br/>memory, CPU and I/O"]
+    N["Fix implementation"]
+    O["Security validation"]
+    P["Performance evaluation"]
+    Q["Document architecture<br/>and experimental results"]
+    R(["Complete laboratory"])
+
+    A --> B --> C --> D
+
+    D -->|"High level"| E
+    D -->|"Native library"| F
+    D -->|"Platform integration"| G
+
+    E --> H
+    F --> H
+    G --> H
+
+    H --> I --> J --> K
+
+    K -->|"No"| L
+    L --> M
+    M --> N
+    N --> H
+
+    K -->|"Yes"| O
+    O --> P
+    P --> Q
+    Q --> R
+
+    classDef terminal fill:#263238,color:#fff,stroke:#111,stroke-width:3px
+    classDef activity fill:#e3f2fd,color:#111,stroke:#1e88e5
+    classDef decision fill:#fff3e0,color:#111,stroke:#fb8c00,stroke-width:2px
+    classDef implementation fill:#e8f5e9,color:#111,stroke:#43a047
+    classDef evaluation fill:#f3e5f5,color:#111,stroke:#8e24aa
+
+    class A,R terminal
+    class B,C,H,I,J,L,M,N,Q activity
+    class D,K decision
+    class E,F,G implementation
+    class O,P evaluation
+```
+
 # **`Awesome`** Android System Programming Resource [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 </div>
 
 [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?style=for-the-badge&logo=windows11&logoColor=white)]()
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)]() 
-[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)]()
+[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/androiddev/new/)
 
 <p align="center">
     <a href="https://github.com/cybersecurity-dev/"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/github.svg" alt="GitHub"></a>
