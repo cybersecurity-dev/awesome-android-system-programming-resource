@@ -80,6 +80,101 @@ flowchart LR
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
+```mermaid
+flowchart TB
+    subgraph APPS["Application Layer"]
+        SYSTEMAPP["System Applications"]
+        USERAPP["User Applications"]
+    end
+
+    subgraph FRAMEWORK["Java API Framework"]
+        AMS["Activity Manager"]
+        PMS["Package Manager"]
+        WMS["Window Manager"]
+        NMS["Notification Manager"]
+        CMS["Connectivity Manager"]
+    end
+
+    subgraph RUNTIME["Android Runtime"]
+        ART["ART"]
+        CORE["Core Libraries"]
+        GC["Garbage Collector"]
+    end
+
+    subgraph NATIVE["Native C/C++ Layer"]
+        BINDER["Binder Driver Interface"]
+        SURFACE["SurfaceFlinger"]
+        MEDIA["Media Framework"]
+        SQLITE["SQLite"]
+        SSL["TLS/Cryptography"]
+    end
+
+    subgraph HAL["Hardware Abstraction Layer"]
+        CAMERA["Camera HAL"]
+        AUDIO["Audio HAL"]
+        SENSOR["Sensor HAL"]
+        WIFI["Wi-Fi HAL"]
+        BLUETOOTH["Bluetooth HAL"]
+    end
+
+    subgraph KERNEL["Linux Kernel"]
+        PROC["Process Management"]
+        MEMORY["Memory Management"]
+        NETWORK["Networking"]
+        SELINUX["SELinux"]
+        DRIVERS["Device Drivers"]
+        POWER["Power Management"]
+    end
+
+    subgraph HARDWARE["Physical Hardware"]
+        CPU["CPU/GPU"]
+        STORAGE["Storage"]
+        RADIO["Radio"]
+        DEVICES["Camera, Sensors and Audio"]
+    end
+
+    SYSTEMAPP --> FRAMEWORK
+    USERAPP --> FRAMEWORK
+
+    FRAMEWORK <-->|"Binder IPC"| BINDER
+    FRAMEWORK --> RUNTIME
+    RUNTIME --> NATIVE
+
+    AMS --> BINDER
+    PMS --> BINDER
+    WMS --> SURFACE
+    CMS --> NETWORK
+
+    NATIVE --> HAL
+    HAL --> KERNEL
+    KERNEL --> HARDWARE
+
+    CAMERA --> DRIVERS
+    AUDIO --> DRIVERS
+    SENSOR --> DRIVERS
+    WIFI --> NETWORK
+    BLUETOOTH --> NETWORK
+
+    SELINUX -.->|"Access control"| FRAMEWORK
+    SELINUX -.->|"Access control"| NATIVE
+
+    classDef app fill:#e3f2fd,color:#111,stroke:#1e88e5
+    classDef framework fill:#e8f5e9,color:#111,stroke:#43a047
+    classDef runtime fill:#fff8e1,color:#111,stroke:#f9a825
+    classDef native fill:#fff3e0,color:#111,stroke:#ef6c00
+    classDef hal fill:#f3e5f5,color:#111,stroke:#8e24aa
+    classDef kernel fill:#ffebee,color:#111,stroke:#e53935
+    classDef hardware fill:#eceff1,color:#111,stroke:#546e7a
+
+    class SYSTEMAPP,USERAPP app
+    class AMS,PMS,WMS,NMS,CMS framework
+    class ART,CORE,GC runtime
+    class BINDER,SURFACE,MEDIA,SQLITE,SSL native
+    class CAMERA,AUDIO,SENSOR,WIFI,BLUETOOTH hal
+    class PROC,MEMORY,NETWORK,SELINUX,DRIVERS,POWER kernel
+    class CPU,STORAGE,RADIO,DEVICES hardware
+```
+
 ## 📖 Contents
 - [Books](#books)
 - [Videos](#videos)
